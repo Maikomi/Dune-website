@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dune.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">home</a></li>
+            <li><a href="index-dune.html" id="dune">dune</a></li>
+            <li><a href="index-trips.html" id="trips">trips</a></li>
+            <li><a href="index-about.html" id="about">about us</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="photos/scroll_page_1.png" alt="desert">
+          <div class="slide-text">
+            <h1>The Spice Trail</h1>
+            <p>Immerse yourself in the heart of the Arrakis desert, following the paths of the giant sandworms, the guardians of the most valuable substance in the universe – the spice melange. The guide will explain the significance of melange for space travel and political intrigue, as well as the rituals and traditions of the Fremen, the desert's inhabitants.</p>
+            <h3> Duration: 2 days</h3>
+            <h3>Price: 2000$</h3>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="photos/scroll_page_2.png" alt="jessica">
+          <div class="slide-text">
+            <h1>The Legacy of House Atreides</h1>
+            <p>Learn the history of one of the most powerful families in the galaxy, House Atreides. Follow in the footsteps of 
+                Paul Atreides, his mother Lady Jessica, and their closest companions, discovering their impact on the fate of Arrakis and the galaxy. The guide will delve into their political intrigues, wars, and spiritual quests.</p>
+            <h3> Duration: 3 days</h3>
+            <h3>Price: 4000$</h3>
+          </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="photos/scroll_page_3.png" alt="ship">
+          <div class="slide-text">
+            <h1>The Battle for Arrakis</h1>
+            <p>Experience the epic battles that shaped the destiny of Arrakis, the most coveted planet in the universe. This tour takes you through the pivotal conflicts between the noble houses, the Fremen, and the imperial forces, bringing history to life with immersive storytelling and strategic analysis. Learn how these battles influenced the balance of power and the control of the spice.</p>
+            <h3> Duration: 2 days</h3>
+            <h3>Price: 3000$</h3>
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    <script src="/index-dune.js"></script>
+  </body>
+</html>
