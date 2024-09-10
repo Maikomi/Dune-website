@@ -1,26 +1,16 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener('DOMContentLoaded', () => {
+    const photos = [...document.getElementsByTagName('img')];
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    const info = [...document.getElementsByTagName('p')];
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function getRandomSize() {
+        return Math.random() * (35 - 20) + 20;
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "flex";  
-  dots[slideIndex-1].className += " active";
-}
+    const decideImageSize = e => {
+        let size = getRandomSize();
+        e.style.width = size + 'rem';
+    }
+
+    photos.forEach(decideImageSize);
+});
