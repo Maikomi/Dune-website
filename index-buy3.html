@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/buy.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet">
+    <title>Buy</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">home</a></li>
+            <li><a href="index-dune.html" id="dune">dune</a></li>
+            <li><a href="index-trips.html" id="trips">trips</a></li>
+            <li><a href="index-guides.html" id="about">about us</a></li>
+        </ul>
+    </nav>
+    <section class="main" id="main">
+        <div class="block">
+            <h1 id="tripName">The Battle for Arrakis</h1>
+            <img src="photos/scroll_page_3.png" alt="">
+            <p>Number of people</p>
+            <input type="number"  min="1" max="12" id="numberOfPeople" value="1">
+            <p>Date of start</p>
+            <input type="date" name="start" id="" min="2024-09-13">
+            <p>Guide</p>
+            <select name="guide" id="">
+                <option value="jakobo">Jakobo</option>
+                <option value="olyviah">Olyviah</option>
+                <option value="maya">Maya</option>
+                <option value="maghdya">Maghdya</option>
+            </select>
+            <p>Final price</p>
+            <p id="price">$</p>
+            <dialog>
+                <p>Thank you for buying our trip <br>
+                     You'll be redirected to the home page</p>
+            </dialog>
+            <button onclick = "redirect()">BUY</button>
+        </div>
+    </section>
+    <script src="/index-buy.js"></script>
+  </body>
+</html>
