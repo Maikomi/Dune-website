@@ -76,6 +76,7 @@ p {
 .mySlides {
     flex-direction: row;
     gap: 5rem;
+    min-height: fit-content;
 }
 
 .mySlides img {
