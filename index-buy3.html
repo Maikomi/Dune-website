@@ -19,19 +19,40 @@
     </nav>
     <section class="main" id="main">
         <div class="block">
-            <h1 id="tripName">The Battle for Arrakis</h1>
-            <img src="photos/scroll_page_3.png" alt="">
-            <p>Number of people</p>
-            <input type="number"  min="1" max="12" id="numberOfPeople" value="1">
-            <p>Date of start</p>
-            <input type="date" name="start" id="" min="2024-09-13">
-            <p>Guide</p>
-            <select name="guide" id="">
-                <option value="jakobo">Jakobo</option>
-                <option value="olyviah">Olyviah</option>
-                <option value="maya">Maya</option>
-                <option value="maghdya">Maghdya</option>
-            </select>
+            <div class="title">
+                <h1 id="tripName">The Battle for Arrakis</h1>
+                <img src="photos/scroll_page_3.png" alt="">
+            </div>
+            <br>
+            <div class="info">
+                <section class="inputs">
+                    <div class="group">
+                        <input type="number"  min="1" max="12" id="numberOfPeople" value="1" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Number of People</label>
+                    </div>
+                    <div class="group">
+                        <input type="date" name="start" id="" min="2024-09-13" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Date</label>
+                    </div>
+                    <div class="group">
+                        <select name="guide" id="" class="input">
+                            <option value="jakobo">Jakobo</option>
+                            <option value="olyviah">Olyviah</option>
+                            <option value="maya">Maya</option>
+                            <option value="maghdya">Maghdya</option>
+                        </select>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Guide</label>
+                    </div>
+                </section>
+            
+            <br>
+            <br><br><br>
             <p>Final price</p>
             <p id="price">$</p>
             <dialog>
@@ -39,6 +60,9 @@
                      You'll be redirected to the home page</p>
             </dialog>
             <button onclick = "redirect()">BUY</button>
+            </div>
+            
+            
         </div>
     </section>
     <script src="/index-buy.js"></script>
