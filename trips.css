@@ -79,8 +79,8 @@ p {
 }
 
 .mySlides img {
-    width: 500px;
-    height: 500px;
+    width: 40%;
+    aspect-ratio: 1/1;
     margin: auto;
 }
 
