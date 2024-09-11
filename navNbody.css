@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url('photos/background.png');
+    background-color: rgb(231,148,100);
+    position: relative;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: rgba(255,255,255,0.45);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);        
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;  
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 7rem;
+    color: #ffffff;
+}
+
+ul{
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+}
+
+li {
+    float: left;
+}
+    
+li a {
+    display: inline-block;
+    color:black;
+    text-align: center;
+    padding: 1.4rem 4rem;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+}
